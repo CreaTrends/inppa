@@ -1,0 +1,23 @@
+.icon-list{
+        
+        padding: 8px 10px;
+        position: relative;
+        width: 50px;
+        float: left;
+        >i{
+            font-size: 1.8rem;
+            color: #59595c;
+        }
+    }
+section.about {
+    h2{
+        color: #2baae2;
+            font-size: 25px;
+            font-weight: 600;
+    }
+}
+@media(min-width:768px) {
+  section.about {
+    padding: 100px 60px;
+  }
+}

@@ -1,0 +1,92 @@
+// Styling for the navbar
+#header-top{
+  @include top-font;
+  span.title{
+    font-size: 1.5rem;
+    font-weight: $fw-900;
+  }
+}
+#mainNav {
+  background-color: $gray-900;
+  min-height: 3rem;
+  .navbar-toggler {
+    font-size: 12px;
+    right: 0;
+    padding: 13px;
+    text-transform: uppercase;
+    color: white;
+    border: 0;
+    background-color: $yellow;
+    @include menu-font;
+  }
+  .navbar-brand {
+    color: $bg-secondary;
+    @include menu-font;
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+      color: darken($primary, 10%);
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        font-size: 90%;
+        font-weight: $fw-900;
+        padding: 0.75em 0;
+        letter-spacing: 1px;
+        color: $bg-secondary;
+        @include menu-font;
+        &.active,
+        &:hover {
+          color: $bg-secondary;
+        }
+      }
+    }
+  }
+}
+@media(min-width:992px) {
+  #mainNav {
+    min-height: 3rem;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: $yellow;
+    .navbar-brand {
+      font-size: 1.75em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          padding: 1.1em 1em !important;
+        }
+      }
+    }
+    &.navbar-shrink {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: $gray-900;
+      .navbar-brand {
+        font-size: 1.25em;
+        padding: 12px 0;
+      }
+    }
+  }
+}
+
+.top-submenu{
+  .dropdown-menu {
+    background-color: rgba(252, 146, 6, .8);
+    color: $white;
+    .nav-link{
+      color: $white;
+    }
+  }
+}
