@@ -39,7 +39,7 @@ $value = rwmb_get_value('page_taxonomy');
                         'order' => 'ASC'
                     );
             $args['tax_query'] = array(
-                        array( 'taxonomy' => 'product-cat', 'field' => 'slug', 'terms' => 'mineria' )
+                        array( 'taxonomy' => 'product-cat', 'field' => 'slug', 'terms' => $value )
                     );
             $loop = new WP_Query( $args );
             if ($loop->have_posts()) :  while ($loop->have_posts()) : $loop->the_post();

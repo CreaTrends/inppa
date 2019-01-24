@@ -61,7 +61,7 @@ get_header(); ?>
     
     <div class="row no-gutters">
       <div class="col-lg-6">
-        <a class="portfolio-item" href="#">
+        <a class="portfolio-item" href="./radiadores-para-mineria/">
           <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/1420637714.jpg');">
             <span class="caption-content caption-welcome is-yellow">
               <h2 class="caption-title mb-0">Mineria</h2>
@@ -70,7 +70,7 @@ get_header(); ?>
         </a>
       </div>
       <div class="col-lg-6">
-        <a class="portfolio-item" href="#">
+        <a class="portfolio-item" href="./transporte/">
           <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/362974.jpg');">
             <span class="caption-content caption-welcome is-darkblue text-right">
               <h2 class="caption-title mb-0">Transporte</h2>
