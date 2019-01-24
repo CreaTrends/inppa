@@ -18,7 +18,7 @@ $fields = rwmb_get_object_fields( 'product' ); // By post type
 $value = rwmb_get_value('page_taxonomy');
 $page_categories = get_the_terms( get_the_ID(), 'category' );
 $categories = get_the_category($post->ID);
-var_dump($page_categories);
+
 ?>
 <section class="page-section-detail p-0" id="masthead-page">
     <span class="page-caption" style="background-image: url(<?php echo $featured_img_url;?>)">
