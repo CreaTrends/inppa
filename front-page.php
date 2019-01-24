@@ -80,7 +80,7 @@ get_header(); ?>
       </div>
       <div class="col-lg-6">
         <a class="portfolio-item" href="#">
-          <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/shutterstock_375945184.jpg');">
+          <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/dominik-vanyi-629409-unsplash.jpg');">
             <span class="caption-content caption-welcome is-orange">
               <h2 class="caption-title mb-0">Servicios</h2>
             </span>
