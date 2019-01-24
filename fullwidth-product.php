@@ -29,24 +29,48 @@ $categories = get_the_category($post->ID);
 </section>
 <section class="page-section-detail py-5" id="product-type">
     <div class="container-fluid">
-        <div class="row ">
-            <div class="col-md-12">
-                <h2><?php the_title();?></h2>
-                <h4><?php the_excerpt();?></h4>
+        <div class="row">
+            <div class="d-none d-lg-block  col-lg-1 border-right">
+                
+                <div id="box">
+                    <div class="bg">
+                    <div class="triangle-3"></div>       
+                        <div class="txt">RADIADORES MAQUINARIA PESADA</div>
+                    </div>
+                </div>
+                <div id="box">
+                    <div class="bg"> 
+                    <div class="triangle-3"></div>        
+                        <div class="txt">RADIADORES MAQUINARIA PESADA</div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-11">
+                <div class="ml-3">
+                    <div class="row ">
+                    <div class="col-md-12">
+                        <h2><?php the_title();?></h2>
+                        <h4><?php the_excerpt();?></h4>
+                    </div>
+                </div>
+                <?php echo the_content();?>
+                        <?php if ( is_singular() ) :?>
+                        
+                        <?php endif;?>
+                        <?php
+                        while ( have_posts() ) :
+                        the_post();
+                        
+                        get_template_part( 'template-parts/content', get_post_type() );
+                        
+                        endwhile; // End of the loop.
+                        ?>
+                </div>
+                
             </div>
         </div>
-        <?php echo the_content();?>
-                <?php if ( is_singular() ) :?>
-                
-                <?php endif;?>
-                <?php
-                while ( have_posts() ) :
-                the_post();
-                
-                get_template_part( 'template-parts/content', get_post_type() );
-                
-                endwhile; // End of the loop.
-                ?>
+        
     </div>
 </section>
 

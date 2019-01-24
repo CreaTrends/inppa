@@ -1,5 +1,5 @@
 <div class="row  bg-light">
-<div class="col-md-3">
+<div class="col-md-3 pl-0">
     <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid', 'title' => 'Feature image']);; ?>
 </div>
 <div class="col-md-9">

@@ -26,10 +26,26 @@ $value = rwmb_get_value('page_taxonomy');
     </span>
 </section>
 <section class="page-section-menu" id="product-type">
-<div class="container-fluid p-60">
+<div class="container-fluid">
     <div class="row">
-        
-            
+        <div class="d-none d-lg-block  col-lg-1 border-right">
+                
+                <div id="box">
+                    <div class="bg">
+                    <div class="triangle-3"></div>       
+                        <div class="txt">RADIADORES MAQUINARIA PESADA</div>
+                    </div>
+                </div>
+                <div id="box">
+                    <div class="bg"> 
+                    <div class="triangle-3"></div>        
+                        <div class="txt">RADIADORES MAQUINARIA PESADA</div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-11">
+              <div class="row">
             <?php 
 
             $args = array(
@@ -59,7 +75,8 @@ $value = rwmb_get_value('page_taxonomy');
                         wp_reset_postdata();
                     endif;
             ?>
-            
+          </div>
+            </div>
         
     </div>
 </div>
