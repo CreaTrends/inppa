@@ -51,32 +51,38 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
   </div>
 </section>
 
-<section class="page-section-menu mb-3 row-products" id="product-type">
+<section class="latest-blog-posts bg-white pt60 pb60 p-0">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 text-md-right lead">
-
-        <a class="btn btn-secondary-outline prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <i class="fa fa-lg fa-chevron-left"></i>
-        </a>
-        <a class="btn btn-secondary-outline next" href="#carouselExampleControls" role="button" data-slide="next">
-          <i class="fa fa-lg fa-chevron-right"></i>
-        </a>
+        
       </div>
       <div class="col-12 col-md-12">
-        <div class="product-list-container d-flex">
+        
+        <div class="items-listed d-flex">
           <div id="box" class="d-none d-lg-block ">
             <div class="bg">
               <div class="triangle-3"></div>
               <div class="txt">Paneles para radiadores</div>
             </div>
           </div>
-          <div class="products-list-inner carousel slide" data-ride="carousel" id="carouselExampleControls" data-interval="false">
-            
-            <div class="carousel-inner">
-              
+
+          <div class="w-100 items-list-fluid span12 border-left">
+            <div class="customNavigation w-75 d-flex justify-content-end position-relative ml-0" style="margin-left:5rem; width: 90% !important;">
+              <div class="p-0 ml-auto">
+                <a class="btn prev">
+                  <i class="fa fa-lg fa-chevron-left"></i>
+                </a>
+                <a class="btn next">
+                  <i class="fa fa-lg fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+            <div id="owl-demo-3" class="owl-carousel owl-theme" >
+
               <!-- start item -->
               <?php
+              $i=4;
               $args = array(
               'post_type' => 'product',
               'posts_per_page' => '-1',
@@ -89,47 +95,152 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
               array( 'taxonomy' => 'product-cat', 'field' => 'slug', 'terms' => 'paneles-para-radiadores' )
               );
               $query = get_posts($args);
-              $chunks = array_chunk($query, 3);
+              $chunks = array_chunk($query, $i);
               $start = 0;
-              foreach ($chunks as $row) :
-              $active = ($start == 0 )? 'active':'';
+              foreach ($query as $post) : setup_postdata($post);
+              $active = ($i == 0) ? $active = "active" : $active = "";
               ?>
-              <div class="carousel-item <?=$active?>">
-                <div class="card-deck">
-                  <?php
-                  foreach ($row as $post) : setup_postdata($post);
-                  ?>
-                  
-                  <div class="card rounded-0 border-0 col-md-4 p-0">
-                    <div class="card-img-top card-img-top-250">
-                      <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'post-thumbnail');?>" class="card-img-top img-fluid" alt="...">
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                      <a href="<?php echo the_permalink();?>"><?php the_title(); ?></a>
-                      </h5>
-                      <p class="card-text"><?php the_content();?></p>
-                    </div>
-                  </div>
-                  <?php
-                  
-                  endforeach; ?>
+              <article class="thumbnail item px-1 card card rounded-0 border-0 p-0" itemscope="" itemtype="http://schema.org/CreativeWork">
+                <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'available-homes');?>" class="img-fluid" />
+                <div class="card-body">
+                  <h4 itemprop="headline">
+                    <a href="#" rel="bookmark"><?php the_title(); ?></a>
+                  </h4>
+                  <p itemprop="text" class="flex-text text-muted"><?php the_content();?></p>
                 </div>
-              </div>
+              </article>
               <?php
-              $start++;
+              $i++;
               endforeach;
               wp_reset_query();
               ?>
-              <!-- end item -->
-            </div>
-
+            </div><!-- #owl-demo-2 -->  
           </div>
         </div>
       </div>
+      
     </div>
-  </div>
+  </div><!-- .container -->
+
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- extra block -->
+<section class="latest-blog-posts bg-white pt60 pb60 p-0">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-md-right lead">
+        
+      </div>
+      <div class="col-12 col-md-12">
+        
+        <div class="items-listed d-flex">
+          <div id="box" class="d-none">
+            <div class="bg">
+              <div class="triangle-3"></div>
+              <div class="txt">Radiadores Maquinaria Pesada</div>
+            </div>
+          </div>
+
+          <div class="w-100 items-list-fluid span12 border-left">
+            
+            <div class="col-12 col-md-11">
+              <div class="carousel-top-title d-flex justify-content-between">
+                <div class="content-tl">
+                  
+                  <h2><?php echo rwmb_meta( 'service_blockservice_block_title' ); ?></h2>
+                  <p><?php echo rwmb_meta( 'service_blockservice_block_content' ); ?></p>
+                </div>
+                <div class="content-tr">
+                  <div class="p-0 ml-auto">
+                    <a class="btn prev">
+                      <i class="fa fa-lg fa-chevron-left"></i>
+                    </a>
+                    <a class="btn next">
+                      <i class="fa fa-lg fa-chevron-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="owl-demo-3" class="owl-carousel owl-theme" >
+
+              <!-- start item -->
+              <?php
+              $i=4;
+              $args = array(
+                'post_type'   =>  'product',
+                'posts_per_page' => '-1',
+                'meta_key' => 'prefix-product_type',
+                'meta_value' => 'Servicio',
+
+              );
+              $args['tax_query'] = array(
+              array( 'taxonomy' => 'product-cat', 'field' => 'slug', 'terms' => 'servicios' )
+              );
+              $query = get_posts($args);
+              $chunks = array_chunk($query, $i);
+              $start = 0;
+              foreach ($query as $post) : setup_postdata($post);
+              $active = ($i == 0) ? $active = "active" : $active = "";
+              ?>
+              <article class="thumbnail item px-1 card card rounded-0 border-0 p-0" itemscope="" itemtype="http://schema.org/CreativeWork">
+                <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'available-homes');?>" class="img-fluid" />
+                <div class="card-body">
+                  <h4 itemprop="headline">
+                    <a href="#" rel="bookmark"><?php the_title(); ?></a>
+                  </h4>
+                  <p itemprop="text" class="flex-text text-muted"><?php echo the_excerpt();?></p>
+                </div>
+              </article>
+              <?php
+              $i++;
+              endforeach;
+              wp_reset_query();
+              ?>
+            </div><!-- #owl-demo-2 -->  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div><!-- .container -->
+
+</section>
+
+
+
+
+
 
 <section class="page-section-menu  mb-3 py-3 row-products" id="product-type">
   <div class="container-fluid">

@@ -93,7 +93,7 @@ get_header(); ?>
         </a>
       </div>
       <div class="col-lg-6">
-        <a class="portfolio-item" href="#">
+        <a class="portfolio-item" href="./servicios/">
           <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/dominik-vanyi-629409-unsplash.jpg');">
             <span class="caption-content caption-welcome is-orange d-flex justify-content-between">
               <h2 class="caption-title mb-0 align-self-center">Servicios</h2>
@@ -108,7 +108,7 @@ get_header(); ?>
         </a>
       </div>
       <div class="col-lg-6">
-        <a class="portfolio-item" href="#">
+        <a class="portfolio-item" href="./intercambiadores-de-calor">
           <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/shutterstock_540603541.jpg');">
             <span class="caption-content caption-welcome is-blue d-flex justify-content-between">
               <h2 class="caption-title mb-0 align-self-center">Intercambiadores de Calor</h2>

@@ -10916,6 +10916,24 @@ section.about h2 {
   }
 }
 
+.page-section > .page-caption .caption-welcome.is-darkblue {
+  background-color: #0F2237;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  right: 0;
+}
+
+.page-section > .page-caption .caption-welcome.is-darkblue h1 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .page-section > .page-caption .caption-welcome.is-darkblue h1 {
+    font-size: 2.5rem;
+  }
+}
+
 .page-section-cta {
   background-color: #728699;
   padding: 80px 0px !important;
@@ -11083,6 +11101,20 @@ section.row-products .product-list-container .products-list-inner {
 .carousel-inner > .carousel-item.prev.right {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+}
+
+article.thumbnail {
+  margin: 0 15px;
+}
+
+.items-list-fluid {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .items-list-fluid {
+    margin-left: 8rem;
+  }
 }
 
 footer {

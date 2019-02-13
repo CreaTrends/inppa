@@ -1,6 +1,6 @@
 <?php
 /**
- Template Name: Full-width Page Intercambiadores de Calor layout
+ Template Name: Full-width Page FLOTA layout
 Template Post Type: post, page, product
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -20,16 +20,15 @@ $value = rwmb_get_value('page_taxonomy');
 $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
 
 ?>
-
 <section class="page-section p-0" id="masthead-page">
     <span class="page-caption" style="background-image: url(<?php echo $featured_img_url;?>)">
-      <span class="caption-content caption-welcome is-blue d-flex">
-        <?php the_title( '<h2 class="caption-title mb-0 align-self-center">', '</h2>' );?>
+      <span class="caption-content caption-welcome is-darkblue d-flex">
+        <?php the_title( '<h2 class="caption-title mb-0 align-self-center text-white">', '</h2>' );?>
         <div class="d-flex justify-content-start align-items-center ml-4 home-banner-iconbox">
           <span class="span icon-list text-center icon">
             <i class="fas fa-phone"></i>
           </span>
-          <span class="ml-2 phone-number">+56 2 3244 8000</span>
+          <span class="ml-2 phone-number text-white">+56 2 3244 8000</span>
         </div>
       </span>
 
@@ -42,7 +41,7 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
       <div class="col-12 col-md-12">
         <div class="product-list-container d-flex">
           <div class="products-list-inner border-left">
-            <h2>Productos</h2>
+            <h2><?php echo get_post_field('post_title', $post->ID); ?></h2>
             <p><?php echo get_post_field('post_content', $post->ID); ?></p>
           </div>
         </div>
@@ -51,7 +50,7 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
   </div>
 </section>
 
-
+<!-- Set up your HTML -->
 
 <section class="latest-blog-posts bg-white pt60 pb60 p-0">
   <div class="container-fluid">
@@ -65,11 +64,11 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
           <div id="box" class="d-none d-lg-block ">
             <div class="bg">
               <div class="triangle-3"></div>
-              <div class="txt">Paneles para radiadores</div>
+              <div class="txt">Fabricación de radiadores</div>
             </div>
           </div>
 
-          <div class="w-100 items-list-fluid span12 border-left">
+          <div class="w-100 items-list-fluid span12 border-left" >
             <div class="customNavigation w-75 d-flex justify-content-end position-relative ml-0" style="margin-left:5rem; width: 90% !important;">
               <div class="p-0 ml-auto">
                 <a class="btn prev">
@@ -89,12 +88,10 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
               'post_type' => 'product',
               'posts_per_page' => '-1',
               'orderby' => 'menu_order',
-              'order' => 'ASC',
-              'meta_key' => 'prefix-product_type',
-              'meta_value' => 'Producto',
+              'order' => 'ASC'
               );
               $args['tax_query'] = array(
-              array( 'taxonomy' => 'product-cat', 'field' => 'slug', 'terms' => 'fabricacion-de-radiadores' )
+              array( 'taxonomy' => 'product-cat', 'field' => 'slug', 'terms' => 'radiadores-flota')
               );
               $query = get_posts($args);
               $chunks = array_chunk($query, $i);
@@ -108,7 +105,7 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
                   <h4 itemprop="headline">
                     <a href="#" rel="bookmark"><?php the_title(); ?></a>
                   </h4>
-                  <p itemprop="text" class="flex-text text-muted"><?php the_content();?></p>
+                  <p itemprop="text" class="flex-text text-muted"><?php echo the_content();?></p>
                 </div>
               </article>
               <?php
@@ -129,39 +126,7 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
 
 
 
-<section class="page-section-menu  mb-3 py-3 row-products" id="product-type">
-  <div class="container-fluid">
-    <div class="row">
-      
-      <div class="col-12 col-md-12">
-        <div class="product-list-container d-flex">
-          <div id="box" class="d-none">
-            <div class="bg">
-              <div class="triangle-3"></div>
-              <div class="txt"><?php echo $value->name;?></div>
-            </div>
-          </div>
-          <div class="products-list-inner border-left">
-            <h2><?php echo rwmb_meta( 'service_blockservice_block_title' ); ?></h2>
-            <p><?php echo rwmb_meta( 'service_blockservice_block_content' ); ?></p>
-          <div class="row">
-            <?php
-            $images = rwmb_meta( 'prefix-image_advanced_1', array( 'size' => 'full' ) );
-            foreach ( $images as $image ) { ?>
-                <div class="col-12 col-md-3"><img src="<?php echo $image['url'];?> " alt="" class="img-fluid img-thumbnail"></div>
-                
-            <?php } 
-            ?>
-          </div>
-              
-            
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</section>
+
 
 
 <section class="about px-0">
@@ -170,6 +135,35 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
       <div class="col-lg-6">
         <p class="text-muted">Radiadores inppa presente en el mercado desde 1949 desarrollando tecnología e
 innovación para la fabricación y mantención de intercambiadores de calor para minería, industria y transporte. </p>
+      </div>
+      <div class="col-lg-3">
+        <h2>Antofagasta</h2>
+        <ul class="list-unstyled">
+          <li class="my-2">
+            <div class="d-flex justify-content-start align-items-center">
+              <span class="span icon-list text-center">
+                <i class="fas fa-map-marker-alt fa-lg self-align-center"></i> 
+              </span>
+              <span class="ml-2">Calle Cía. Radomiro Tomic 375, Barrio Industrial La Negra</span>
+            </div>
+          </li>
+          <li class="my-2">
+            <div class="d-flex justify-content-start align-items-center">
+              <span class="span icon-list text-center">
+              <i class="fas fa-phone fa-lg"></i>
+            </span>
+              <span class="ml-2">+56 2 3244 8000</span>
+            </div>
+          </li>
+          <li class="my-2">
+            <div class="d-flex justify-content-start align-items-center">
+              <span class="span icon-list text-center">
+              <i class="fas fa-envelope fa-lg"></i>
+            </span>
+              <span class="ml-2">contacto@inppa.cl</span>
+            </div>
+          </li>
+        </ul>
       </div>
       <div class="col-lg-3">
         <h2>Santiago</h2>

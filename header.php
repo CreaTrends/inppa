@@ -67,7 +67,7 @@ else{
 		<div class="d-none d-md-block menu-shorthand mr-auto align-self-center">
 			<div class="items-shorcut">
 				<a href="<?php echo get_site_url().'/radiadores-para-mineria'; ?>" class="item-link-circle yellow"></a>
-				<a href="<?php echo get_site_url().'radiadores-flota'; ?>" class="item-link-circle darkblue"></a>
+				<a href="<?php echo get_site_url().'/radiadores-flota'; ?>" class="item-link-circle darkblue"></a>
 				<a href="<?php echo get_site_url().'/servicios'; ?>" class="item-link-circle orange"></a>
 				<a href="<?php echo get_site_url().'/intercambiadores-de-calor'; ?>" class="item-link-circle blue"></a>
 			</div>

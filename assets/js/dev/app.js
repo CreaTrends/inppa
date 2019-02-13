@@ -36,3 +36,30 @@ $('.next').click(function(e) {
   $(link).carousel('next');
   return false;
 });*/
+
+jQuery(document).ready(function($) {
+
+  $(".owl-carousel").each(function() {
+          $(this).owlCarousel({
+            items:3,
+            loop:false,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    768:{
+                        items:1
+                    },
+                    1000:{
+                        items:3
+                    }
+                }
+          });
+        });
+        // Custom Navigation Events
+        $(".next").click(function(){$(this).closest('.span12').find('.owl-carousel').trigger('next.owl.carousel');})
+        $(".prev").click(function(){$(this).closest('.span12').find('.owl-carousel').trigger('prev.owl.carousel');})
+  
+});
+
+
