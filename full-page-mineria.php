@@ -215,8 +215,8 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
             </div>
           </div>
           <div class="products-list-inner border-left">
-            <h2>Servicios</h2>
-            <p><?php echo get_post_field('post_content', $post->ID); ?></p>
+            <h2><?php echo rwmb_meta( 'service_blockservice_block_title' ); ?></h2>
+            <p><?php echo rwmb_meta( 'service_blockservice_block_content' ); ?></p>
             <div class="card-deck">
               <?php 
               $args = array(
