@@ -8,6 +8,16 @@
  *
  * @package Arkus
  */
+if ( is_page('servicios') ) {
+	$menu = 'menu-servicios';
+}elseif(is_page('radiadores-para-mineria') || is_page('tecnologia') || is_page('rse')){
+	$menu = 'menu-2';
+}elseif(is_page('intercambiadores-de-calor')){
+	$menu = 'menu-intercambiadores';
+}
+else{
+	$menu = 'menu-1';
+}
 
 ?>
 <!doctype html>
@@ -23,14 +33,14 @@
 <body <?php body_class(); ?>>
 
 <section class="header-top d-none d-lg-block p-0" id="header-top">
-	<div class="row">
+	<div class="row" style="z-index: 99;position: relative;">
 		<div class="container-fluid p-60">
 			<div class="d-flex justify-content-between py-4 px-0">
 				<div class="top-lend align-self-center">
 					<span class="title"><?php echo get_bloginfo('description');?></span>
 				</div>
 				<div class="brand ml-auto">
-					<a class="navbar-brand js-scroll-trigger" href="#page-top">
+					<a class="navbar-brand js-scroll-trigger" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 						<img src="<?php echo wp_get_attachment_image_url( get_theme_mod( 'custom_logo' ) , 'full' ); ?>"  style="height: 6vh;" class="img-fluid is-normal">
 						<img src="<?php echo get_template_directory_uri().'/assets/images/logo_hover.svg';?>"  style="height: 6vh;" class="img-fluid is-hover d-none">
 					</a>
@@ -47,9 +57,24 @@
 		Menu
 		<i class="fas fa-bars"></i>
 		</button>
-		<?php if ( !is_front_page() ) : ?>
+		<div class="d-flex justify-content-between  w-100">
+
+			
+		
+		<?php if ( !is_front_page() ) : 
+			
+			?>
+		<div class="d-none d-md-block menu-shorthand mr-auto align-self-center">
+			<div class="items-shorcut">
+				<a href="<?php echo get_site_url().'/radiadores-para-mineria'; ?>" class="item-link-circle yellow"></a>
+				<a href="<?php echo get_site_url().'radiadores-flota'; ?>" class="item-link-circle darkblue"></a>
+				<a href="<?php echo get_site_url().'/servicios'; ?>" class="item-link-circle orange"></a>
+				<a href="<?php echo get_site_url().'/intercambiadores-de-calor'; ?>" class="item-link-circle blue"></a>
+			</div>
+		</div>
 		<?php
 				wp_nav_menu( array(
+					'menu'  => $menu,
 					'theme_location'  => 'menu-2',
 					'menu_id'         => 'navbarResponsive',
 					'container'       => 'div',
@@ -62,8 +87,11 @@
 		) );
 	?>
 	<?php endif;?>
+	</div>
 </div>
 </nav>
+
+
 <div id="page" class="site">
 	
 

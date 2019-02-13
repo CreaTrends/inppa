@@ -17,112 +17,56 @@ $fields = rwmb_get_object_fields( 'product' ); // By post type
 
 $value = rwmb_get_value('page_taxonomy');
 
+$termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
+
 ?>
 <section class="page-section p-0" id="masthead-page">
     <span class="page-caption" style="background-image: url(<?php echo $featured_img_url;?>)">
-      <span class="caption-content caption-welcome is-yellow">
-        <?php the_title( '<h1 class="caption-title mb-0">', '</h1>' );?>
+      <span class="caption-content caption-welcome is-yellow d-flex">
+        <?php the_title( '<h2 class="caption-title mb-0 align-self-center">', '</h2>' );?>
+        <div class="d-flex justify-content-start align-items-center ml-4 home-banner-iconbox">
+          <span class="span icon-list text-center icon">
+            <i class="fas fa-phone"></i>
+          </span>
+          <span class="ml-2 phone-number">+56 2 3244 8000</span>
+        </div>
       </span>
+
     </span>
 </section>
-<section class="page-section-menu" id="product-type">
-<div class="container-fluid">
+<section class="page-section-menu  mb-3 py-3 row-products" id="product-type">
+  <div class="container-fluid">
     <div class="row">
-        <div class="d-none d-lg-block  col-lg-1 border-right">
-                
-                <div id="box">
-                    <div class="bg">
-                    <div class="triangle-3"></div>       
-                        <div class="txt">RADIADORES MAQUINARIA PESADA</div>
-                    </div>
-                </div>
-                <div id="box">
-                    <div class="bg"> 
-                    <div class="triangle-3"></div>        
-                        <div class="txt">RADIADORES MAQUINARIA PESADA</div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="col-lg-11">
-              <div class="row">
-            <?php 
-
-            $args = array(
-                        'post_type' => 'product',
-                        'posts_per_page' => '-1',
-                        'orderby' => 'menu_order',
-                        'order' => 'ASC'
-                    );
-            $args['tax_query'] = array(
-                        array( 'taxonomy' => 'product-cat', 'field' => 'slug', 'terms' => $value )
-                    );
-            $loop = new WP_Query( $args );
-            if ($loop->have_posts()) :  while ($loop->have_posts()) : $loop->the_post();
-            ?>
-            <div class="col-12 col-lg-4 mb-4">
-            <div class="card">
-                
-                <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(),array('800','600'));?>" class="card-img-top img-fluid" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><a href="<?php echo the_permalink();?>"><?php echo get_the_title();?></a></h5>
-                    <p class="card-text"><?php echo the_excerpt();?></p>
-                </div>
-            </div>
-            </div>
-            <?php
-            endwhile;
-                        wp_reset_postdata();
-                    endif;
-            ?>
+      
+      <div class="col-12 col-md-12">
+        <div class="product-list-container d-flex">
+          <div class="products-list-inner border-left border-0 justify-content-center">
+            <h2><?php echo get_post_field('post_title', $post->ID); ?></h2>
+            <p><?php echo get_post_field('post_content', $post->ID); ?></p>
           </div>
-            </div>
-        
-    </div>
-</div>
-</section>
-<section class="page-section-cta " id="banner-cta">
-    <div class="container-fluid p-60">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center">
-                <h2 class="mb-5">SERVICIOS</h2>
-            </div>
-            <div class="col-12 col-lg-6 text-center justify-content-center">
-                <h3>DIAGNÓSTICO</h3>
-                <p class="text-center">
-                    Conozca la tecnología Inppa para
-                    el diagnóstico de transferencia
-                    de sus equipos
-                </p>
-            </div>
-            <div class="col-12 col-lg-6 text-center justify-content-center">
-                <h3>MANTENCIÓN</h3>
-                <p class="text-center">
-                    Procedimientos Inppa para
-                    reparaciones con tecnología de
-                    ultima generación
-                </p>
-            </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
+
+
 <section class="about px-0">
   <div class="container-fluid justify-content-center p-60">
     <div class="row">
       <div class="col-lg-6">
-        <p class="text-muted">Radiadores inppa presente en el mercado desde 1959 desarrollando tecnología e innovación para la industria y transporte. Contamos con una amplia gama de productos
-          estándar y productos especiales. Nuestros procedimientos y materias primas están
-        certificados y nuestros procedimientos mantienen el cuidado del medio ambiente.</p>
+        <p class="text-muted">Radiadores inppa presente en el mercado desde 1949 desarrollando tecnología e
+innovación para la fabricación y mantención de intercambiadores de calor para minería, industria y transporte. </p>
       </div>
       <div class="col-lg-3">
-        <h2>Contacto</h2>
+        <h2>Antofagasta</h2>
         <ul class="list-unstyled">
           <li class="my-2">
             <div class="d-flex justify-content-start align-items-center">
               <span class="span icon-list text-center">
                 <i class="fas fa-map-marker-alt fa-lg self-align-center"></i> 
               </span>
-              <span class="ml-2">Camino Melipilla 13460, Maipú</span>
+              <span class="ml-2">Calle Cía. Radomiro Tomic 375, Barrio Industrial La Negra</span>
             </div>
           </li>
           <li class="my-2">
@@ -144,14 +88,14 @@ $value = rwmb_get_value('page_taxonomy');
         </ul>
       </div>
       <div class="col-lg-3">
-        <h2>Contamos con una a</h2>
+        <h2>Santiago</h2>
         <ul class="list-unstyled">
           <li class="my-2">
             <div class="d-flex justify-content-start align-items-center">
               <span class="span icon-list text-center">
                 <i class="fas fa-map-marker-alt fa-lg self-align-center"></i> 
               </span>
-              <span class="ml-2">Camino Melipilla 13460, Maipú</span>
+              <span class="ml-2">Jotabeche 1280, Estacion Central-Santiago</span>
             </div>
           </li>
           <li class="my-2">
@@ -159,7 +103,7 @@ $value = rwmb_get_value('page_taxonomy');
               <span class="span icon-list text-center">
               <i class="fas fa-phone fa-lg"></i>
             </span>
-              <span class="ml-2">+56 2 3244 8000</span>
+              <span class="ml-2">+56 2 2894 8553</span>
             </div>
           </li>
           <li class="my-2">
@@ -167,7 +111,7 @@ $value = rwmb_get_value('page_taxonomy');
               <span class="span icon-list text-center">
               <i class="fas fa-envelope fa-lg"></i>
             </span>
-              <span class="ml-2">contacto@inppa.cl</span>
+              <span class="ml-2">mireille.rodriguez@inpparadiadores.cl</span>
             </div>
           </li>
         </ul>
@@ -175,6 +119,8 @@ $value = rwmb_get_value('page_taxonomy');
     </div>
   </div>
 </section>
+
+
 <?php
 
 get_footer();

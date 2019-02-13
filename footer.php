@@ -16,7 +16,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <span class="copyright text-white">INPPA S.A. Todos los derechos reservados, Copyrigth ©, 2017</span>
+            <span class="copyright text-white">INPPA Servicios Industriales SPA. Todos los derechos reservados, Copyrigth ©, 2019</span>
           </div>
           <div class="col-md-6">
             <ul class="list-inline text-right social-buttons">

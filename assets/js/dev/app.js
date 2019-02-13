@@ -20,7 +20,19 @@
 
 })(jQuery); // End of use strict
 
+/*$('.next').on('click',function(){ 
+      var refer = $(this).attr('id');
+      console.log(refer);
+      $('.products-list-inner').carousel('next');return false; 
+      
+    });*/
+/*    $('.prev').click(function(){ $('.carousel-01').carousel('prev');return false; });
 
 
-
-console.log('hola');
+$('.next').click(function(e) {
+  var refer = $(this).data('refer'),
+  link = '.'+refer;
+  console.log(link);
+  $(link).carousel('next');
+  return false;
+});*/

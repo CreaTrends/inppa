@@ -63,8 +63,16 @@ get_header(); ?>
       <div class="col-lg-6">
         <a class="portfolio-item" href="./radiadores-para-mineria/">
           <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/1420637714.jpg');">
-            <span class="caption-content caption-welcome is-yellow">
-              <h2 class="caption-title mb-0">Mineria</h2>
+            <span class="caption-content caption-welcome is-yellow d-flex justify-content-between">
+              <h2 class="caption-title mb-0 align-self-center">Mineria</h2>
+              
+              <div class="d-flex justify-content-start align-items-center ml-4 home-banner-iconbox">
+                <span class="span icon-list text-center icon">
+                  <i class="fas fa-phone"></i>
+                </span>
+                <span class="ml-2 phone-number">+56 2 3244 8000</span>
+              </div>
+              
             </span>
           </span>
         </a>
@@ -72,8 +80,14 @@ get_header(); ?>
       <div class="col-lg-6">
         <a class="portfolio-item" href="./transporte/">
           <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/362974.jpg');">
-            <span class="caption-content caption-welcome is-darkblue text-right">
-              <h2 class="caption-title mb-0">Transporte</h2>
+            <span class="caption-content caption-welcome is-darkblue d-flex justify-content-between">
+              <h2 class="caption-title mb-0 align-self-center">Radiadores flota </h2>
+              <div class="d-flex justify-content-start align-items-center ml-4 home-banner-iconbox">
+                <span class="span icon-list text-center icon">
+                  <i class="fas fa-phone"></i>
+                </span>
+                <span class="ml-2 phone-number">+56 2 3244 8000</span>
+              </div>
             </span>
           </span>
         </a>
@@ -81,8 +95,14 @@ get_header(); ?>
       <div class="col-lg-6">
         <a class="portfolio-item" href="#">
           <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/dominik-vanyi-629409-unsplash.jpg');">
-            <span class="caption-content caption-welcome is-orange">
-              <h2 class="caption-title mb-0">Servicios</h2>
+            <span class="caption-content caption-welcome is-orange d-flex justify-content-between">
+              <h2 class="caption-title mb-0 align-self-center">Servicios</h2>
+              <div class="d-flex justify-content-start align-items-center ml-4 home-banner-iconbox">
+                <span class="span icon-list text-center icon">
+                  <i class="fas fa-phone"></i>
+                </span>
+                <span class="ml-2 phone-number">+56 2 3244 8000</span>
+              </div>
             </span>
           </span>
         </a>
@@ -90,8 +110,9 @@ get_header(); ?>
       <div class="col-lg-6">
         <a class="portfolio-item" href="#">
           <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/shutterstock_540603541.jpg');">
-            <span class="caption-content caption-welcome is-blue text-right">
-              <h2 class="caption-title mb-0">Intercambiadores de Calor</h2>
+            <span class="caption-content caption-welcome is-blue d-flex justify-content-between">
+              <h2 class="caption-title mb-0 align-self-center">Intercambiadores de Calor</h2>
+              
             </span>
           </span>
         </a>
@@ -114,6 +135,7 @@ get_header(); ?>
           <li class="my-2">
             <div class="d-flex justify-content-start align-items-center">
               <span class="span icon-list text-center">
+                <i class="fas fa-phone-square"></i>
                 <i class="fas fa-map-marker-alt fa-lg self-align-center"></i> 
               </span>
               <span class="ml-2">Camino Melipilla 13460, Maipú</span>

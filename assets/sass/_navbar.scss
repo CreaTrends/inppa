@@ -4,7 +4,31 @@
   span.title{
     font-size: 1.5rem;
     font-weight: $fw-900;
+    position: absolute;
+    bottom: 2vh;
   }
+  background-image: url('./assets/images/header_top.jpg');
+  background-position: 50%;
+      background-position: 0 top;
+      background-repeat: no-repeat;
+      
+}
+.header-top {
+  position: relative;
+  &:before {
+        background-position: 50%;
+    background-position: 0 top;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(90deg,rgba(0,0,0,0) 0%,white 50%);
+        content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* opacity: .3; */
+      }
 }
 #mainNav {
   background-color: $gray-900;
@@ -88,5 +112,55 @@
     .nav-link{
       color: $white;
     }
+  }
+}
+
+.items-shorcut {
+  a.item-link-circle {
+      
+      width: 25px;
+      height: 25px;
+      /* display: inline-block; */
+      /* position: relative; */
+      /* padding: 2px; */
+      border-radius: 100%;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      float: left;
+      margin-right: 5px;
+      border-width: 1px;
+      border-style: solid;
+      transition:background-color .2s ease;
+      &.yellow {
+        background-color:$yellow;
+        border-color: darken($yellow, 8%);
+        &:hover {
+          background-color:lighten($yellow, 15%);
+        }
+      }
+      &.orange {
+        background-color:$orange;
+        border-color: darken($orange, 8%);
+        &:hover {
+          background-color:lighten($orange, 15%);
+        }
+      }
+      &.blue {
+        background-color:$blue;
+        border-color: darken($blue, 8%);
+        &:hover {
+          background-color:lighten($blue, 15%);
+        }
+        
+      }
+      &.darkblue {
+        background-color:$dark_blue;
+        border-color: darken($dark_blue, 8%);
+        &:hover {
+          background-color:lighten($dark_blue, 15%);
+        }
+        
+      }
   }
 }

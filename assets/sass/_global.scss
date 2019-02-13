@@ -103,3 +103,24 @@ img::-moz-selection {
   padding:0px 6rem;
 }
 }
+
+.home-banner-iconbox {
+  span.icon {
+    background-color: rgba(64, 64, 65, 0.25);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    &> i {
+      font-size: 20px;
+    color: #ffffff;
+    /* background-color: transparent; */
+    transform: 45deg;
+    transform: rotate(100deg);
+    /* opacity: 0; */
+    }
+  }
+  span.phone-number{
+        font-size: calc(60% + 1vw);
+    font-weight: 900;
+  }
+}
