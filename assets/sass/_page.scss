@@ -18,7 +18,10 @@
                 bottom: 0;
                 position: absolute;
                 padding: 1rem 2rem;
-                width: calc(50% + 1vw);
+                width: calc(80% - 10vw);
+                &>h2 {
+                    font-size: calc(70% + 1vw);
+                }
             /* @include media-breakpoint-up(lg) {
                 width: 50%;
             } */

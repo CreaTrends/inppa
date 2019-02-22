@@ -10493,7 +10493,7 @@ img::-moz-selection {
 }
 
 .home-banner-iconbox span.phone-number {
-  font-size: calc(60% + 1vw);
+  font-size: calc(38% + 1vw);
   font-weight: 900;
 }
 
@@ -10859,10 +10859,14 @@ section.about h2 {
   bottom: 0;
   position: absolute;
   padding: 1rem 2rem;
-  width: calc(50% + 1vw);
+  width: calc(80% - 10vw);
   /* @include media-breakpoint-up(lg) {
                 width: 50%;
             } */
+}
+
+.page-section > .page-caption .caption-welcome > h2 {
+  font-size: calc(70% + 1vw);
 }
 
 .page-section > .page-caption .caption-welcome.is-yellow {
