@@ -32,7 +32,7 @@ get_header(); ?>
       </div>
       <div class="col-lg-6">
         <a class="portfolio-item" href="./radiadores-flota/">
-          <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/home2.jpg');">
+          <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/home2.JPG');">
             <span class="caption-content caption-welcome is-darkblue d-flex justify-content-between">
               <h2 class="caption-title mb-0 align-self-center">Radiadores flota </h2>
               <div class="d-flex justify-content-start align-items-center ml-4 home-banner-iconbox">
