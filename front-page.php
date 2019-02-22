@@ -6,54 +6,7 @@
  * @package creatrends
  */
 get_header(); ?>
-<!-- welcome message -->
- <!-- Header -->
-<!--<header class="masthead">
-  <div class="container">
-    <div class="intro-text">
-      <div class="intro-lead-in">Welcome To Our Studio!</div>
-      <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
-      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
-    </div>
-  </div>
-</header>-->
-    <!-- Services -->
-<!--<section id="services">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">Services</h2>
-        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-      </div>
-    </div>
-    <div class="row text-center">
-      <div class="col-md-4">
-        <span class="fa-stack fa-4x">
-          <i class="fas fa-circle fa-stack-2x text-primary"></i>
-          <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-        </span>
-        <h4 class="service-heading">E-Commerce</h4>
-        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-      </div>
-      <div class="col-md-4">
-        <span class="fa-stack fa-4x">
-          <i class="fas fa-circle fa-stack-2x text-primary"></i>
-          <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-        </span>
-        <h4 class="service-heading">Responsive Design</h4>
-        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-      </div>
-      <div class="col-md-4">
-        <span class="fa-stack fa-4x">
-          <i class="fas fa-circle fa-stack-2x text-primary"></i>
-          <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-        </span>
-        <h4 class="service-heading">Web Security</h4>
-        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-      </div>
-    </div>
-  </div>
-</section>-->
+
 <?php if ( !is_front_page() ) : ?>
 <?php endif;?>
 <section class="welcome-section p-0" id="welcome">
@@ -62,7 +15,7 @@ get_header(); ?>
     <div class="row no-gutters">
       <div class="col-lg-6">
         <a class="portfolio-item" href="./radiadores-para-mineria/">
-          <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/1420637714.jpg');">
+          <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/home1.jpg');">
             <span class="caption-content caption-welcome is-yellow d-flex justify-content-between">
               <h2 class="caption-title mb-0 align-self-center">Mineria</h2>
               
@@ -78,8 +31,8 @@ get_header(); ?>
         </a>
       </div>
       <div class="col-lg-6">
-        <a class="portfolio-item" href="./transporte/">
-          <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/362974.jpg');">
+        <a class="portfolio-item" href="./radiadores-flota/">
+          <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/home2.jpg');">
             <span class="caption-content caption-welcome is-darkblue d-flex justify-content-between">
               <h2 class="caption-title mb-0 align-self-center">Radiadores flota </h2>
               <div class="d-flex justify-content-start align-items-center ml-4 home-banner-iconbox">
@@ -94,7 +47,7 @@ get_header(); ?>
       </div>
       <div class="col-lg-6">
         <a class="portfolio-item" href="./servicios/">
-          <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/dominik-vanyi-629409-unsplash.jpg');">
+          <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/home3.jpg');">
             <span class="caption-content caption-welcome is-orange d-flex justify-content-between">
               <h2 class="caption-title mb-0 align-self-center">Servicios</h2>
               <div class="d-flex justify-content-start align-items-center ml-4 home-banner-iconbox">
@@ -109,7 +62,7 @@ get_header(); ?>
       </div>
       <div class="col-lg-6">
         <a class="portfolio-item" href="./intercambiadores-de-calor">
-          <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/shutterstock_540603541.jpg');">
+          <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/home4.jpg');">
             <span class="caption-content caption-welcome is-blue d-flex justify-content-between">
               <h2 class="caption-title mb-0 align-self-center">Intercambiadores de Calor</h2>
               

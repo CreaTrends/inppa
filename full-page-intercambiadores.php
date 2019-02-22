@@ -65,7 +65,7 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
           <div id="box" class="d-none d-lg-block ">
             <div class="bg">
               <div class="triangle-3"></div>
-              <div class="txt">Paneles para radiadores</div>
+              <div class="txt">Fabricación de  radiadores</div>
             </div>
           </div>
 
