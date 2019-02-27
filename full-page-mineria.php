@@ -28,7 +28,8 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
           <span class="span icon-list text-center icon">
             <i class="fas fa-phone"></i>
           </span>
-          <span class="ml-2 phone-number">+56 2 3244 8000</span>
+          <span class="ml-2 phone-number">+5624243300 / </span>
+          <span class="ml-2 phone-number">+56228941123 ( Stgo )</span>
         </div>
       </span>
 
@@ -64,7 +65,7 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
           <div id="box" class="d-none d-lg-block ">
             <div class="bg">
               <div class="triangle-3"></div>
-              <div class="txt">RADIADORES Camiones</div>
+              <div class="txt">Radiadores Camiones</div>
             </div>
           </div>
 
@@ -300,7 +301,7 @@ innovación para la fabricación y mantención de intercambiadores de calor para
               <span class="span icon-list text-center">
                 <i class="fas fa-map-marker-alt fa-lg self-align-center"></i> 
               </span>
-              <span class="ml-2">Calle Cía. Radomiro Tomic 375, Barrio Industrial La Negra</span>
+              <span class="ml-2"><a href="https://www.google.com/maps/place/Chuquicamata,+Codelco+Ne/@-22.3090195,-68.9210203,17z/data=!3m1!4b1!4m5!3m4!1s0x96ac7568707457b9:0x496c5511ebed67ad!8m2!3d-22.3090245!4d-68.9188316" target="_blank">Calle Cía. Radomiro Tomic 375, Barrio Industrial La Negra</a></span>
             </div>
           </li>
           <li class="my-2">
@@ -308,7 +309,9 @@ innovación para la fabricación y mantención de intercambiadores de calor para
               <span class="span icon-list text-center">
               <i class="fas fa-phone fa-lg"></i>
             </span>
-              <span class="ml-2">+56 2 3244 8000</span>
+              <div>
+                <span class="ml-2"><a href="tel:+56 2 3244 8000">+56 2 3244 8000</a></span>
+              </div>
             </div>
           </li>
           <li class="my-2">
@@ -316,7 +319,7 @@ innovación para la fabricación y mantención de intercambiadores de calor para
               <span class="span icon-list text-center">
               <i class="fas fa-envelope fa-lg"></i>
             </span>
-              <span class="ml-2">contacto@inppa.cl</span>
+              <span class="ml-2"><a href="mailto:contacto@inppa.cl">contacto@inppa.cl</a></span>
             </div>
           </li>
         </ul>
@@ -329,7 +332,7 @@ innovación para la fabricación y mantención de intercambiadores de calor para
               <span class="span icon-list text-center">
                 <i class="fas fa-map-marker-alt fa-lg self-align-center"></i> 
               </span>
-              <span class="ml-2">Jotabeche 1280, Estacion Central-Santiago</span>
+              <span class="ml-2"><a href="https://www.google.com/maps/place/Jotabeche+1280,+Santiago,+Estaci%C3%B3n+Central,+Regi%C3%B3n+Metropolitana/@-33.4649173,-70.6879002,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c4ee606a1af7:0x78bec10594d4cdb!8m2!3d-33.4649218!4d-70.6857115" target="_blank">Jotabeche 1280, Estacion Central-Santiago</a></span>
             </div>
           </li>
           <li class="my-2">
@@ -337,7 +340,7 @@ innovación para la fabricación y mantención de intercambiadores de calor para
               <span class="span icon-list text-center">
               <i class="fas fa-phone fa-lg"></i>
             </span>
-              <span class="ml-2">+56 2 2894 8553</span>
+              <span class="ml-2"><a href="tel:+56 2 2894 8553">+56 2 2894 8553</a></span>
             </div>
           </li>
           <li class="my-2">
@@ -345,7 +348,7 @@ innovación para la fabricación y mantención de intercambiadores de calor para
               <span class="span icon-list text-center">
               <i class="fas fa-envelope fa-lg"></i>
             </span>
-              <span class="ml-2">mireille.rodriguez@inpparadiadores.cl</span>
+              <span class="ml-2"><a href="mailto:mireille.rodriguez@inpparadiadores.cl">mireille.rodriguez@inpparadiadores.cl</a></span>
             </div>
           </li>
         </ul>

@@ -10477,12 +10477,12 @@ img::-moz-selection {
 .home-banner-iconbox span.icon {
   background-color: rgba(64, 64, 65, 0.25);
   border-radius: 100%;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 }
 
 .home-banner-iconbox span.icon > i {
-  font-size: 20px;
+  font-size: 16px;
   color: #ffffff;
   /* background-color: transparent; */
   -webkit-transform: 45deg;
@@ -10493,7 +10493,7 @@ img::-moz-selection {
 }
 
 .home-banner-iconbox span.phone-number {
-  font-size: calc(38% + 1vw);
+  font-size: 14px;
   font-weight: 900;
 }
 
@@ -10506,7 +10506,7 @@ img::-moz-selection {
 }
 
 #header-top span.title {
-  font-size: 1.5rem;
+  font-size: 18px;
   font-weight: 900;
   position: absolute;
   bottom: 2vh;
@@ -10749,8 +10749,9 @@ header.masthead .intro-text .intro-heading {
   margin: 0px;
   bottom: 0;
   position: absolute;
-  padding: 1rem 2rem;
+  padding: .5rem 2rem;
   width: calc(100% - 7vw);
+  min-height: 60px;
 }
 
 .portfolio-item .caption .caption-content.caption-welcome.is-yellow {
@@ -10782,7 +10783,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .portfolio-item .caption .caption-content h2 {
-  font-size: calc(90% + 1vw);
+  font-size: 22px;
   font-weight: 400;
 }
 
@@ -10816,7 +10817,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .icon-list {
-  padding: 8px 10px;
+  padding: 5px 10px;
   position: relative;
   width: 50px;
   float: left;

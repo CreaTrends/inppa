@@ -29,7 +29,7 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
           <span class="span icon-list text-center icon">
             <i class="fas fa-phone"></i>
           </span>
-          <span class="ml-2 phone-number">+56 2 3244 8000</span>
+          <span class="ml-2 phone-number">+56228940846</span>
         </div>
       </span>
 
@@ -131,117 +131,6 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- extra block -->
-<section class="latest-blog-posts bg-white pt60 pb60 p-0">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 text-md-right lead">
-        
-      </div>
-      <div class="col-12 col-md-12">
-        
-        <div class="items-listed d-flex">
-          <div id="box" class="d-none">
-            <div class="bg">
-              <div class="triangle-3"></div>
-              <div class="txt">Radiadores Maquinaria Pesada</div>
-            </div>
-          </div>
-
-          <div class="w-100 items-list-fluid span12 border-left">
-            
-            <div class="col-12 col-md-11">
-              <div class="carousel-top-title d-flex justify-content-between">
-                <div class="content-tl">
-                  
-                  <h2><?php echo rwmb_meta( 'service_blockservice_block_title' ); ?></h2>
-                  <p><?php echo rwmb_meta( 'service_blockservice_block_content' ); ?></p>
-                </div>
-                <div class="content-tr">
-                  <div class="p-0 ml-auto">
-                    <a class="btn prev">
-                      <i class="fa fa-lg fa-chevron-left"></i>
-                    </a>
-                    <a class="btn next">
-                      <i class="fa fa-lg fa-chevron-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="owl-demo-3" class="owl-carousel owl-theme" >
-
-              <!-- start item -->
-              <?php
-              $i=4;
-              $args = array(
-                'post_type'   =>  'product',
-                'posts_per_page' => '-1',
-                'meta_key' => 'prefix-product_type',
-                'meta_value' => 'Servicio',
-
-              );
-              $args['tax_query'] = array(
-              array( 'taxonomy' => 'product-cat', 'field' => 'slug', 'terms' => 'servicios' )
-              );
-              $query = get_posts($args);
-              $chunks = array_chunk($query, $i);
-              $start = 0;
-              foreach ($query as $post) : setup_postdata($post);
-              $active = ($i == 0) ? $active = "active" : $active = "";
-              ?>
-              <article class="thumbnail item px-1 card card rounded-0 border-0 p-0" itemscope="" itemtype="http://schema.org/CreativeWork">
-                <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'available-homes');?>" class="img-fluid" />
-                <div class="card-body">
-                  <h4 itemprop="headline">
-                    <a href="#" rel="bookmark"><?php the_title(); ?></a>
-                  </h4>
-                  <p itemprop="text" class="flex-text text-muted"><?php echo the_excerpt();?></p>
-                </div>
-              </article>
-              <?php
-              $i++;
-              endforeach;
-              wp_reset_query();
-              ?>
-            </div><!-- #owl-demo-2 -->  
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </div><!-- .container -->
-
-</section>
-
-
-
-
-
-
 <section class="page-section-menu  mb-3 py-3 row-products" id="product-type">
   <div class="container-fluid">
     <div class="row">
@@ -296,23 +185,24 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
     </div>
   </div>
 </section>
+
+
 <section class="about px-0">
   <div class="container-fluid justify-content-center p-60">
     <div class="row">
       <div class="col-lg-6">
-        <p class="text-muted">Radiadores inppa presente en el mercado desde 1959 desarrollando tecnología e innovación para la industria y transporte. Contamos con una amplia gama de productos
-          estándar y productos especiales. Nuestros procedimientos y materias primas están
-        certificados y nuestros procedimientos mantienen el cuidado del medio ambiente.</p>
+        <p class="text-muted">Radiadores inppa presente en el mercado desde 1949 desarrollando tecnología e
+innovación para la fabricación y mantención de intercambiadores de calor para minería, industria y transporte. </p>
       </div>
       <div class="col-lg-3">
-        <h2>Contacto</h2>
+        <h2>Santiago</h2>
         <ul class="list-unstyled">
           <li class="my-2">
             <div class="d-flex justify-content-start align-items-center">
               <span class="span icon-list text-center">
                 <i class="fas fa-map-marker-alt fa-lg self-align-center"></i> 
               </span>
-              <span class="ml-2">Camino Melipilla 13460, Maipú</span>
+              <span class="ml-2"><a href="https://www.google.com/maps/place/Jotabeche+1280,+Santiago,+Estaci%C3%B3n+Central,+Regi%C3%B3n+Metropolitana/@-33.4649173,-70.6879002,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c4ee606a1af7:0x78bec10594d4cdb!8m2!3d-33.4649218!4d-70.6857115" target="_blank">Jotabeche 1280, Estacion Central-Santiago</a></span>
             </div>
           </li>
           <li class="my-2">
@@ -320,7 +210,7 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
               <span class="span icon-list text-center">
               <i class="fas fa-phone fa-lg"></i>
             </span>
-              <span class="ml-2">+56 2 3244 8000</span>
+              <span class="ml-2"><a href="tel:+56 2 2894 8553">+56 2 2894 8553</a></span>
             </div>
           </li>
           <li class="my-2">
@@ -328,36 +218,7 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
               <span class="span icon-list text-center">
               <i class="fas fa-envelope fa-lg"></i>
             </span>
-              <span class="ml-2">contacto@inppa.cl</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="col-lg-3">
-        <h2>Contamos con una a</h2>
-        <ul class="list-unstyled">
-          <li class="my-2">
-            <div class="d-flex justify-content-start align-items-center">
-              <span class="span icon-list text-center">
-                <i class="fas fa-map-marker-alt fa-lg self-align-center"></i> 
-              </span>
-              <span class="ml-2">Camino Melipilla 13460, Maipú</span>
-            </div>
-          </li>
-          <li class="my-2">
-            <div class="d-flex justify-content-start align-items-center">
-              <span class="span icon-list text-center">
-              <i class="fas fa-phone fa-lg"></i>
-            </span>
-              <span class="ml-2">+56 2 3244 8000</span>
-            </div>
-          </li>
-          <li class="my-2">
-            <div class="d-flex justify-content-start align-items-center">
-              <span class="span icon-list text-center">
-              <i class="fas fa-envelope fa-lg"></i>
-            </span>
-              <span class="ml-2">contacto@inppa.cl</span>
+              <span class="ml-2"><a href="mailto:mireille.rodriguez@inpparadiadores.cl">mireille.rodriguez@inpparadiadores.cl</a></span>
             </div>
           </li>
         </ul>

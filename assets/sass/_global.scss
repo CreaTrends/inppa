@@ -106,12 +106,12 @@ img::-moz-selection {
 
 .home-banner-iconbox {
   span.icon {
-    background-color: rgba(64, 64, 65, 0.25);
+        background-color: rgba(64, 64, 65, 0.25);
     border-radius: 100%;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     &> i {
-      font-size: 20px;
+      font-size: 16px;
     color: #ffffff;
     /* background-color: transparent; */
     transform: 45deg;
@@ -120,7 +120,7 @@ img::-moz-selection {
     }
   }
   span.phone-number{
-        font-size: calc(38% + 1vw);
+        font-size: 14px;
     font-weight: 900;
   }
 }
