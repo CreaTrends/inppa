@@ -286,6 +286,52 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
 </section>
 
 
+<!-- Clientes -->
+<section class="latest-blog-posts bg-white pt60 pb60 p-0">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-md-right lead">
+        
+      </div>
+      <div class="col-12 col-md-12">
+        
+        <div class="d-none items-listed d-flex">
+          <div id="box" class="d-none">
+            <div class="bg">
+              <div class="triangle-3"></div>
+              <div class="txt">Radiadores Maquinaria Pesada</div>
+            </div>
+          </div>
+
+          <div class="w-100 items-list-fluid span12 border-left">
+            
+            <div class="col-12 col-md-11">
+              <div class="carousel-top-title d-flex justify-content-between">
+                <div class="content-tl">
+                  
+                  <h2>Clientes</h2>
+                </div>
+                
+              </div>
+            </div>
+
+            <img src="<?php echo get_template_directory_uri().'/assets/images/logo_centinela2.png';?>" class="rounded float-left col-md-2"  style="max-width: 200px;">
+            <img src="<?php echo get_template_directory_uri().'/assets/images/logo_escondida.png';?>" class="rounded float-left col-md-2" style="max-width: 200px;" />
+            <img src="<?php echo get_template_directory_uri().'/assets/images/logo_finning.png';?>" class="rounded float-left col-md-2" style="max-width: 200px;" />
+            <img src="<?php echo get_template_directory_uri().'/assets/images/logo_joyglobal.png';?>" class="rounded float-left col-md-2" style="max-width: 200px;" />
+            <img src="<?php echo get_template_directory_uri().'/assets/images/logo_komatsu.png';?>" class="rounded float-left col-md-2" style="max-width: 200px;" />
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div><!-- .container -->
+
+</section>
+
+
+
 <section class="about px-0">
   <div class="container-fluid justify-content-center p-60">
     <div class="row">
