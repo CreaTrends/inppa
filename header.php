@@ -10,7 +10,7 @@
  */
 if ( is_page('servicios') ) {
 	$menu = 'menu-servicios';
-}elseif(is_page('radiadores-para-mineria') || is_page('tecnologia') || is_page('rse')){
+}elseif(is_page('radiadores-para-mineria') || is_page('tecnologia-inppa') || is_page('rse')){
 	$menu = 'menu-mineria';
 }elseif(is_page('intercambiadores-de-calor')){
 	$menu = 'menu-intercambiadores';

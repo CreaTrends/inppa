@@ -15,7 +15,7 @@ get_header(); ?>
     <div class="row no-gutters">
       <div class="col-lg-6">
         <a class="portfolio-item" href="./radiadores-para-mineria/">
-          <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/home1.jpg');">
+          <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/home_min_ok.jpg');">
             <span class="caption-content caption-welcome is-yellow d-flex justify-content-between">
               <h2 class="caption-title mb-0 align-self-center">Mineria</h2>
               
@@ -24,7 +24,7 @@ get_header(); ?>
                   <i class="fas fa-phone"></i>
                 </span>
                 <div class="numbers-box">
-                  <span class="ml-2 phone-number w-100 d-block">+5624243300</span>
+                  <span class="ml-2 phone-number w-100 d-block">+5524243300 ( Antof. )</span>
                   <span class="ml-2 phone-number d-block">+56228941123 ( Stgo )</span>
                 </div>
               </div>
@@ -50,7 +50,7 @@ get_header(); ?>
       </div>
       <div class="col-lg-6">
         <a class="portfolio-item" href="./servicios/">
-          <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/home3.jpg');">
+          <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/home1.jpg');">
             <span class="caption-content caption-welcome is-orange d-flex justify-content-between">
               <h2 class="caption-title mb-0 align-self-center">Servicios</h2>
               <div class="d-flex justify-content-start align-items-center ml-4 home-banner-iconbox">

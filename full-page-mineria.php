@@ -28,7 +28,7 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
           <span class="span icon-list text-center icon">
             <i class="fas fa-phone"></i>
           </span>
-          <span class="ml-2 phone-number">+5624243300 / </span>
+          <span class="ml-2 phone-number">+5524243300 ( Antof. )/ </span>
           <span class="ml-2 phone-number">+56228941123 ( Stgo )</span>
         </div>
       </span>
@@ -308,10 +308,9 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
             <div class="col-12 col-md-11">
               <div class="carousel-top-title d-flex justify-content-between">
                 <div class="content-tl">
-                  
                   <h2>Clientes</h2>
                 </div>
-                
+
               </div>
             </div>
 
@@ -356,7 +355,7 @@ innovación para la fabricación y mantención de intercambiadores de calor para
               <i class="fas fa-phone fa-lg"></i>
             </span>
               <div>
-                <span class="ml-2"><a href="tel:+56 2 3244 8000">+56 2 3244 8000</a></span>
+                <span class="ml-2"><a href="tel:+55 24224 3300">+55 24224 3300</a></span>
               </div>
             </div>
           </li>
@@ -365,7 +364,7 @@ innovación para la fabricación y mantención de intercambiadores de calor para
               <span class="span icon-list text-center">
               <i class="fas fa-envelope fa-lg"></i>
             </span>
-              <span class="ml-2"><a href="mailto:contacto@inppa.cl">contacto@inppa.cl</a></span>
+              <span class="ml-2"><a href="mailto:contacto@inpparadiadores.cl">contacto@inpparadiadores.cl</a></span>
             </div>
           </li>
         </ul>
@@ -386,7 +385,10 @@ innovación para la fabricación y mantención de intercambiadores de calor para
               <span class="span icon-list text-center">
               <i class="fas fa-phone fa-lg"></i>
             </span>
-              <span class="ml-2"><a href="tel:+56 2 2894 8553">+56 2 2894 8553</a></span>
+              <span class="ml-2">
+                <a href="tel:+56 2 2894 1123">+56 2 2894 1123 </a><br>
+                <a href="tel:+56 2 2894 4770">+56 2 2894 4770</a>
+              </span>
             </div>
           </li>
           <li class="my-2">
@@ -394,7 +396,7 @@ innovación para la fabricación y mantención de intercambiadores de calor para
               <span class="span icon-list text-center">
               <i class="fas fa-envelope fa-lg"></i>
             </span>
-              <span class="ml-2"><a href="mailto:mireille.rodriguez@inpparadiadores.cl">mireille.rodriguez@inpparadiadores.cl</a></span>
+              <span class="ml-2"><a href="mailto:contactosantiago@inpparadiadores.cl">contactosantiago@inpparadiadores.cl</a></span>
             </div>
           </li>
         </ul>
