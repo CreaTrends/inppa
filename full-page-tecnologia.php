@@ -47,21 +47,41 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
     </div>
   </div>
 </section>
-<section class="page-section-menu  mb-3 py-3 row-products" id="product-type">
+
+
+
+<section class="latest-blog-posts bg-white pt60 pb60 p-0">
   <div class="container-fluid">
     <div class="row">
-      
+      <div class="col-12 text-md-right lead">
+        
+      </div>
       <div class="col-12 col-md-12">
-        <div class="product-list-container d-flex">
-          <div id="box" class="d-none d-lg-block">
+        
+        <div class="items-listed d-flex">
+          <div id="box" class="d-none d-lg-block ">
             <div class="bg">
               <div class="triangle-3"></div>
               <div class="txt"><?php echo $value->name;?></div>
             </div>
           </div>
-          <div class="products-list-inner border-left">
-            <div class="card-deck">
-              <?php 
+
+          <div class="w-100 items-list-fluid span12 border-left">
+            <div class="customNavigation w-75 d-flex justify-content-end position-relative ml-0" style="margin-left:5rem; width: 90% !important;">
+              <div class="p-0 ml-auto">
+                <a class="btn prev">
+                  <i class="fa fa-lg fa-chevron-left"></i>
+                </a>
+                <a class="btn next">
+                  <i class="fa fa-lg fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+            <div id="owl-demo-3" class="owl-carousel owl-theme" >
+
+              <!-- start item -->
+              <?php
+              $i=4;
               $args = array(
                 'post_type'   =>  'product',
                 'posts_per_page' => '-1',
@@ -73,32 +93,37 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
               array( 'taxonomy' => 'product-cat', 'field' => 'slug', 'terms' => 'tecnologia-inppa' )
               );
               $rows = get_posts($args);
-              
+              $chunks = array_chunk($rows, $i);
+              $start = 0;
               foreach ($rows as $post) : setup_postdata($post);
+              $active = ($i == 0) ? $active = "active" : $active = "";
               ?>
-              <div class="card rounded-0 border-0 col-md-4 p-0">
-                <div class="card-img-top card-img-top-250">
-                  <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'post-thumbnail');?>" class="card-img-top img-fluid" alt="...">
-                </div>
+              <article class="thumbnail item px-1 card card rounded-0 border-0 p-0" itemscope="" itemtype="http://schema.org/CreativeWork">
+                <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'available-homes');?>" class="img-fluid" />
                 <div class="card-body">
-                  <h5 class="card-title">
-                  <a href="#"><?php the_title(); ?></a>
-                  </h5>
-                  <p class="card-text"><?php the_content();?></p>
+                  <h4 itemprop="headline">
+                    <a href="#" rel="bookmark"><?php the_title(); ?></a>
+                  </h4>
+                  <p itemprop="text" class="flex-text text-muted"><?php the_content();?></p>
                 </div>
-              </div>
+              </article>
               <?php
-              
-              endforeach; 
-              wp_reset_query();?>
-            </div>
+              $i++;
+              endforeach;
+              wp_reset_query();
+              ?>
+            </div><!-- #owl-demo-2 -->  
           </div>
         </div>
-        
       </div>
+      
     </div>
-  </div>
+  </div><!-- .container -->
+
 </section>
+
+
+
 
 <section class="page-section-menu  mb-3 py-3 row-products" id="product-type">
   <div class="container-fluid">
@@ -137,11 +162,11 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
   <div class="container-fluid justify-content-center p-60">
     <div class="row">
       <div class="col-lg-6">
-        <p class="text-muted">Radiadores inppa presente en el mercado desde 1949 desarrollando tecnología e
+        <p class="text-muted">Inppa Radiadores presente en el mercado desde 1949 desarrollando tecnología e
 innovación para la fabricación y mantención de intercambiadores de calor para minería, industria y transporte. </p>
       </div>
       <div class="col-lg-3">
-        <h2>Antofagasta</h2>
+        <h2 class="text-center">Antofagasta</h2>
         <ul class="list-unstyled">
           <li class="my-2">
             <div class="d-flex justify-content-start align-items-center">
@@ -157,7 +182,12 @@ innovación para la fabricación y mantención de intercambiadores de calor para
               <i class="fas fa-phone fa-lg"></i>
             </span>
               <div>
-                <span class="ml-2"><a href="tel:+55 24224 3300">+55 24224 3300</a></span>
+
+                <span class="ml-2">
+                  <a href="tel:+56552895664">+56552895664</a>
+                  <a href="tel:+56552895663">+56552895663</a>
+                  
+                </span>
               </div>
             </div>
           </li>
@@ -172,24 +202,23 @@ innovación para la fabricación y mantención de intercambiadores de calor para
         </ul>
       </div>
       <div class="col-lg-3">
-        <h2>Santiago</h2>
+        <h2 class="text-center">Santiago</h2>
         <ul class="list-unstyled">
           <li class="my-2">
-            <div class="d-flex justify-content-start align-items-center">
-              <span class="span icon-list text-center">
-                <i class="fas fa-map-marker-alt fa-lg self-align-center"></i> 
+            <div class="d-flex justify-content-start align-items-center" style="min-height: 75px;">
+              <span class="span icon-list text-center align-self-center">
+                <i class="fas fa-map-marker-alt fa-lg "></i> 
               </span>
               <span class="ml-2"><a href="https://www.google.com/maps/place/Jotabeche+1280,+Santiago,+Estaci%C3%B3n+Central,+Regi%C3%B3n+Metropolitana/@-33.4649173,-70.6879002,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c4ee606a1af7:0x78bec10594d4cdb!8m2!3d-33.4649218!4d-70.6857115" target="_blank">Jotabeche 1280, Estacion Central-Santiago</a></span>
             </div>
           </li>
           <li class="my-2">
             <div class="d-flex justify-content-start align-items-center">
-              <span class="span icon-list text-center">
+              <span class="span icon-list text-center align-self-center">
               <i class="fas fa-phone fa-lg"></i>
             </span>
               <span class="ml-2">
-                <a href="tel:+56 2 2894 1123">+56 2 2894 1123 </a><br>
-                <a href="tel:+56 2 2894 4770">+56 2 2894 4770</a>
+                <a href="tel:+56228941123">+56228941123</a>
               </span>
             </div>
           </li>

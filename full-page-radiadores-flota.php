@@ -28,7 +28,7 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
           <span class="span icon-list text-center icon">
             <i class="fas fa-phone"></i>
           </span>
-          <span class="ml-2 phone-number text-white">+56228948553</span>
+          <span class="ml-2 phone-number text-white">Santiago : +56228948553</span>
         </div>
       </span>
 
@@ -129,34 +129,36 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
   <div class="container-fluid justify-content-center p-60">
     <div class="row">
       <div class="col-lg-6">
-        <p class="text-muted">Inppa Radiadores  presente en el mercado desde 1949 desarrollando tecnología e
+        <p class="text-muted">Inppa Radiadores presente en el mercado desde 1949 desarrollando tecnología e
 innovación para la fabricación y mantención de intercambiadores de calor para minería, industria y transporte. </p>
       </div>
       <div class="col-lg-3">
         <h2 class="text-center">Santiago</h2>
         <ul class="list-unstyled">
           <li class="my-2">
-            <div class="d-flex justify-content-start align-items-center">
-              <span class="span icon-list text-center">
-                <i class="fas fa-map-marker-alt fa-lg self-align-center"></i> 
+            <div class="d-flex justify-content-start align-items-center footer-col-info">
+              <span class="span icon-list text-center align-self-center">
+                <i class="fas fa-map-marker-alt fa-lg "></i> 
               </span>
               <span class="ml-2"><a href="https://www.google.com/maps/place/Jotabeche+1280,+Santiago,+Estaci%C3%B3n+Central,+Regi%C3%B3n+Metropolitana/@-33.4649173,-70.6879002,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c4ee606a1af7:0x78bec10594d4cdb!8m2!3d-33.4649218!4d-70.6857115" target="_blank">Jotabeche 1280, Estacion Central-Santiago</a></span>
             </div>
           </li>
           <li class="my-2">
-            <div class="d-flex justify-content-start align-items-center">
-              <span class="span icon-list text-center">
+            <div class="d-flex justify-content-start align-items-center footer-col-info">
+              <span class="span icon-list text-center align-self-center">
               <i class="fas fa-phone fa-lg"></i>
             </span>
-              <span class="ml-2"><a href="tel:+56228948553">+56228948553</a></span>
+              <span class="ml-2">
+                <a href="tel:+56228940846">+56228940846</a>
+              </span>
             </div>
           </li>
           <li class="my-2">
-            <div class="d-flex justify-content-start align-items-center">
+            <div class="d-flex justify-content-start align-items-center footer-col-info">
               <span class="span icon-list text-center">
               <i class="fas fa-envelope fa-lg"></i>
             </span>
-              <span class="ml-2"><a href="mailto:mireille.rodriguez@inpparadiadores.cl">mireille.rodriguez@inpparadiadores.cl</a></span>
+              <span class="ml-2"><a href="mailto:contactosantiago@inpparadiadores.cl">contactosantiago@inpparadiadores.cl</a></span>
             </div>
           </li>
         </ul>

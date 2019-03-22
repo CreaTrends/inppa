@@ -60,7 +60,6 @@ else{
 		
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#primary-menu-wrap" aria-controls="primary-menu-wrap" aria-expanded="false" aria-label="Toggle navigation">
 		Menu
-		<i class="fas fa-bars"></i>
 		</button>
 		<div class="d-flex justify-content-between  w-100">
 
