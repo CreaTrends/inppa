@@ -28,8 +28,8 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
           <span class="span icon-list text-center icon">
             <i class="fas fa-phone"></i>
           </span>
-          <span class="ml-2 phone-number">+5524243300 ( Antof. )/ </span>
-          <span class="ml-2 phone-number">+56228941123 ( Stgo )</span>
+          <span class="ml-2 phone-number">Antofagasta: +56552895664 / +56552895663</span>
+          <span class="ml-2 phone-number">Santiago: +56228941123</span>
         </div>
       </span>
 
@@ -314,12 +314,43 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
               </div>
             </div>
 
-            <img src="<?php echo get_template_directory_uri().'/assets/images/logo_centinela2.png';?>" class="rounded float-left col-md-2"  style="max-width: 200px;">
-            <img src="<?php echo get_template_directory_uri().'/assets/images/logo_escondida.png';?>" class="rounded float-left col-md-2" style="max-width: 200px;" />
-            <img src="<?php echo get_template_directory_uri().'/assets/images/logo_finning.png';?>" class="rounded float-left col-md-2" style="max-width: 200px;" />
-            <img src="<?php echo get_template_directory_uri().'/assets/images/logo_joyglobal.png';?>" class="rounded float-left col-md-2" style="max-width: 200px;" />
-            <img src="<?php echo get_template_directory_uri().'/assets/images/logo_komatsu.png';?>" class="rounded float-left col-md-2" style="max-width: 200px;" />
-            
+            <div class="card-deck">
+              <div class="card border-0">
+                <div class=" text-center">
+                  <figure class="figure">
+                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_centinela2.png';?>" class="figure-img img-fluid rounded" style="max-height: 100px;">
+                  </figure>
+                </div>
+              </div>
+              <div class="card border-0">
+                <div class=" text-center">
+                  <figure class="figure">
+                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_escondida.png';?>" class="figure-img img-fluid rounded" style="max-height: 100px;">
+                  </figure>
+                </div>
+              </div>
+              <div class="card border-0">
+                <div class=" text-center">
+                  <figure class="figure">
+                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_finning.png';?>" class="figure-img img-fluid rounded" style="max-height: 100px;">
+                  </figure>
+                </div>
+              </div>
+              <div class="card border-0">
+                <div class=" text-center">
+                  <figure class="figure ">
+                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_joyglobal.png';?>" class="figure-img img-fluid rounded" style="max-height: 100px;">
+                  </figure>
+                </div>
+              </div>
+              <div class="card border-0">
+                <div class=" text-center">
+                  <figure class="figure ">
+                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_komatsu.png';?>" class="figure-img img-fluid rounded" style="max-height: 100px;">
+                  </figure>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -335,11 +366,11 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
   <div class="container-fluid justify-content-center p-60">
     <div class="row">
       <div class="col-lg-6">
-        <p class="text-muted">Radiadores inppa presente en el mercado desde 1949 desarrollando tecnología e
+        <p class="text-muted">Inppa Radiadores presente en el mercado desde 1949 desarrollando tecnología e
 innovación para la fabricación y mantención de intercambiadores de calor para minería, industria y transporte. </p>
       </div>
       <div class="col-lg-3">
-        <h2>Antofagasta</h2>
+        <h2 class="text-center">Antofagasta</h2>
         <ul class="list-unstyled">
           <li class="my-2">
             <div class="d-flex justify-content-start align-items-center">

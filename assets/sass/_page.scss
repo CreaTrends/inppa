@@ -12,7 +12,10 @@
         background-repeat: no-repeat;
         background-position: 50%;
         background-size: cover;
-        min-height: 65vh;
+        height: 30vh;
+        @include media-breakpoint-up(md) {
+            height: 65vh;
+        }
         .caption-welcome {
             margin: 0px;
                 bottom: 0;

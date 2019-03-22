@@ -8,8 +8,8 @@
  *
  * @package Arkus
  */
-if ( is_page('servicios') ) {
-	$menu = 'menu-servicios';
+if ( is_page('paneles') ) {
+	$menu = 'menu-paneles';
 }elseif(is_page('radiadores-para-mineria') || is_page('tecnologia-inppa') || is_page('rse')){
 	$menu = 'menu-mineria';
 }elseif(is_page('intercambiadores-de-calor')){

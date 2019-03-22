@@ -1,6 +1,6 @@
 <?php
 /**
- Template Name: Full-width Page Servicios layout
+ Template Name: Full-width Page Paneles layout
 Template Post Type: post, page, product
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
