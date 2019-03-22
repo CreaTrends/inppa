@@ -10478,7 +10478,7 @@ img::-moz-selection {
   background-color: rgba(64, 64, 65, 0.25);
   border-radius: 100%;
   width: 40px;
-  line-height: 40px;
+  line-height: 25px;
   text-align: center !important;
   height: 40px;
   border: 2px solid #f8f9fa;

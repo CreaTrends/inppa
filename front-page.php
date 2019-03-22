@@ -80,7 +80,7 @@ get_header(); ?>
         <a class="portfolio-item" href="./paneles/">
           <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/home1.jpg');">
             <span class="caption-content caption-welcome is-orange d-flex justify-content-between">
-              <h2 class="caption-title mb-0 align-self-center">Paneles</h2>
+              <h2 class="caption-title mb-0 align-self-center">Panales</h2>
               <div class="d-flex justify-content-start align-items-center ml-4 home-banner-iconbox">
                 <span class="span icon-list text-center icon">
                   <i class="fas fa-phone"></i>
