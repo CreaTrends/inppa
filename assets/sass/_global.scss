@@ -106,10 +106,14 @@ img::-moz-selection {
 
 .home-banner-iconbox {
   span.icon {
-        background-color: rgba(64, 64, 65, 0.25);
+    background-color: rgba(64, 64, 65, 0.25);
     border-radius: 100%;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    line-height: 35px;
+    text-align: center !imporant;
+    text-align: center !important;
+    height: 40px;
+    border: 2px solid #f8f9fa;
     &> i {
       font-size: 16px;
     color: #ffffff;
