@@ -10477,8 +10477,11 @@ img::-moz-selection {
 .home-banner-iconbox span.icon {
   background-color: rgba(64, 64, 65, 0.25);
   border-radius: 100%;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center !important;
+  height: 40px;
+  border: 2px solid #f8f9fa;
 }
 
 .home-banner-iconbox span.icon > i {
