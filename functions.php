@@ -438,3 +438,39 @@ function attached_files( $meta_boxes ) {
 	return $meta_boxes;
 }
 add_filter( 'rwmb_meta_boxes', 'attached_files' );
+
+
+
+
+function contact_addreses( $meta_boxes ) {
+	$prefix = 'prefix-';
+
+	$meta_boxes[] = array(
+		'id' => 'contact_addreses',
+		'title' => esc_html__( 'Direcciones Contacto', 'contact_addreses' ),
+		'post_types' => array('post', 'page' ),
+		'context' => 'advanced',
+		'priority' => 'default',
+		'autosave' => 'false',
+		'fields' => array(
+			array(
+				'id' => $prefix . 'addreses_list',
+				'type' => 'text_list',
+				'name' => esc_html__( 'Lista de Direcciones', 'contact_addreses' ),
+				'options' => array(
+					'Ciudad' => 'ciudad',
+					'Direccion' => 'Dirección',
+					'Email' => 'email',
+					'telefono_1' => 'telefono 1',
+					'telefono_2' => 'telefono 2',
+					'url' => 'url',
+				),
+				'clone' => 'true',
+				'add_button' => esc_html__( 'clonar', 'contact_addreses' ),
+			),
+		),
+	);
+
+	return $meta_boxes;
+}
+add_filter( 'rwmb_meta_boxes', 'contact_addreses' );
