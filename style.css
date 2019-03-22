@@ -10502,12 +10502,23 @@ img::-moz-selection {
 
 .footer-col-info {
   min-height: 75px;
-  background-color: red;
 }
 
 dd {
   margin-bottom: .0 !important;
   margin-left: 0 !important;
+}
+
+.attached-file-text {
+  color: #0073aa;
+  -webkit-transition-property: border,background,color;
+  transition-property: border,background,color;
+  -webkit-transition-duration: .05s;
+  transition-duration: .05s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  font-size: 13px;
+  font-weight: 900;
 }
 
 #header-top {

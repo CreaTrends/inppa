@@ -131,10 +131,17 @@ img::-moz-selection {
 .footer-col-info {
 
   min-height: 75px;
-  background-color: red;
 }
 
 dd {
     margin-bottom: .0 !important;
     margin-left: 0 !important;
+}
+.attached-file-text{
+  color: #0073aa;
+    transition-property: border,background,color;
+    transition-duration: .05s;
+    transition-timing-function: ease-in-out;
+    font-size: 13px;
+    font-weight: 900;
 }

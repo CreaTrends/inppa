@@ -410,3 +410,31 @@ function service_block( $meta_boxes ) {
 	return $meta_boxes;
 }
 add_filter( 'rwmb_meta_boxes', 'service_block' );
+
+
+
+function attached_files( $meta_boxes ) {
+	$prefix = 'prefix-';
+
+	$meta_boxes[] = array(
+		'id' => 'attached_files_to_page',
+		'title' => esc_html__( 'Agregar Descargas', 'metabox-online-generator' ),
+		'post_types' => array('post', 'page' ),
+		'context' => 'advanced',
+		'priority' => 'default',
+		'autosave' => 'false',
+		'fields' => array(
+			array(
+				'id' => $prefix . 'attace_files',
+				'type' => 'file_advanced',
+				'name' => esc_html__( 'Agregar Descarga', 'metabox-online-generator' ),
+				
+				'max_status'       => 'false',
+				'mime_type'        => 'application',
+			),
+		),
+	);
+
+	return $meta_boxes;
+}
+add_filter( 'rwmb_meta_boxes', 'attached_files' );

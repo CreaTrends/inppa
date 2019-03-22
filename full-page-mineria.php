@@ -318,35 +318,50 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
               <div class="card border-0">
                 <div class=" text-center">
                   <figure class="figure">
-                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_centinela2.png';?>" class="figure-img img-fluid rounded" style="max-height: 100px;">
+                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_centinela2.png';?>" class="figure-img img-fluid rounded" style="width: 200px;">
                   </figure>
                 </div>
               </div>
               <div class="card border-0">
                 <div class=" text-center">
                   <figure class="figure">
-                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_escondida.png';?>" class="figure-img img-fluid rounded" style="max-height: 100px;">
+                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_escondida.png';?>" class="figure-img img-fluid rounded" style="width: 200px;">
                   </figure>
                 </div>
               </div>
               <div class="card border-0">
                 <div class=" text-center">
                   <figure class="figure">
-                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_finning.png';?>" class="figure-img img-fluid rounded" style="max-height: 100px;">
+                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_finning.png?v=1';?>" class="figure-img img-fluid rounded" style="width: 200px;">
+                  </figure>
+                </div>
+                <div class=" text-center">
+                  <figure class="figure">
+                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_joyglobal.png?v=1';?>" class="figure-img img-fluid rounded" style="max-height: 100px;">
+                  </figure>
+                </div>
+                <div class=" text-center">
+                  <figure class="figure">
+                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_komatsu.png?v=1';?>" class="figure-img img-fluid rounded" style="max-height: 100px;">
                   </figure>
                 </div>
               </div>
               <div class="card border-0">
                 <div class=" text-center">
                   <figure class="figure ">
-                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_joyglobal.png';?>" class="figure-img img-fluid rounded" style="max-height: 100px;">
+                    <img src="<?php echo get_template_directory_uri().'/assets/images/LOGO_kocu.png';?>" class="figure-img img-fluid rounded" style="width: 175px;">
+                  </figure>
+                </div>
+                <div class=" text-center">
+                  <figure class="figure ">
+                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_epiroc.png';?>" class="figure-img img-fluid rounded" style="width: 175px;">
                   </figure>
                 </div>
               </div>
               <div class="card border-0">
                 <div class=" text-center">
                   <figure class="figure ">
-                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_komatsu.png';?>" class="figure-img img-fluid rounded" style="max-height: 100px;">
+                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_codelco.png';?>" class="figure-img img-fluid rounded" style="width:200px;">
                   </figure>
                 </div>
               </div>

@@ -87,6 +87,8 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
                 'posts_per_page' => '-1',
                 'meta_key' => 'prefix-product_type',
                 'meta_value' => 'Servicio',
+                'orderby' => 'menu_order',
+                'order'   => 'ASC',
 
               );
               $args['tax_query'] = array(
@@ -157,7 +159,54 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
   </div>
 </section>
 
-
+<!-- if downloads -->
+<?php
+              $files = rwmb_meta( 'prefix-attace_files' );
+              if($files){
+              ?>
+<section class="page-section-menu  mb-3 py-3 row-products" id="product-type">
+  <div class="container-fluid">
+    <div class="row">
+      
+      <div class="col-12 col-md-12">
+        <div class="product-list-container d-flex">
+          <div class="products-list-inner border-left">
+            <h2>Descargas</h2>
+            
+              <?php
+              //Columns must be a factor of 12 (1,2,3,4,6,12)
+              $numOfCols = 4;
+              $rowCount = 0;
+              $bootstrapColWidth = 12 / $numOfCols;
+              ?>
+              <div class="row">
+              <?php
+              
+              foreach ($files as $row){
+              ?>  
+                      <div class="col-md-<?php echo $bootstrapColWidth; ?>">
+                          <div class="download-item d-flex bg-faded py-3">
+                            <span class="span icon-list text-center icon">
+                              <i class="fas fa-file"></i>
+                            </span>
+                            <a href="<?php echo $row['url']; ?>" class="align-self-center attached-file-text"><?php echo $row['title']; ?></a>
+                          </div>
+                      </div>
+              <?php
+                  $rowCount++;
+                  if($rowCount % $numOfCols == 0) echo '</div><div class="row">';
+              }
+              ?>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<?php
+}
+              ?>
 <section class="about px-0">
   <div class="container-fluid justify-content-center p-60">
     <div class="row">
@@ -169,7 +218,7 @@ innovación para la fabricación y mantención de intercambiadores de calor para
         <h2 class="text-center">Antofagasta</h2>
         <ul class="list-unstyled">
           <li class="my-2">
-            <div class="d-flex justify-content-start align-items-center">
+            <div class="d-flex justify-content-start align-items-center footer-col-info">
               <span class="span icon-list text-center">
                 <i class="fas fa-map-marker-alt fa-lg self-align-center"></i> 
               </span>
@@ -177,22 +226,19 @@ innovación para la fabricación y mantención de intercambiadores de calor para
             </div>
           </li>
           <li class="my-2">
-            <div class="d-flex justify-content-start align-items-center">
+            <div class="d-flex justify-content-start align-items-center footer-col-info">
               <span class="span icon-list text-center">
               <i class="fas fa-phone fa-lg"></i>
             </span>
-              <div>
-
-                <span class="ml-2">
-                  <a href="tel:+56552895664">+56552895664</a>
-                  <a href="tel:+56552895663">+56552895663</a>
+              <span class="ml-2">
+                  <a href="tel:+56552895664" class="d-block">+56552895664</a>
+                  <a href="tel:+56552895663" class="d-block">+56552895663</a>
                   
                 </span>
-              </div>
             </div>
           </li>
           <li class="my-2">
-            <div class="d-flex justify-content-start align-items-center">
+            <div class="d-flex justify-content-start align-items-center footer-col-info">
               <span class="span icon-list text-center">
               <i class="fas fa-envelope fa-lg"></i>
             </span>
@@ -205,7 +251,7 @@ innovación para la fabricación y mantención de intercambiadores de calor para
         <h2 class="text-center">Santiago</h2>
         <ul class="list-unstyled">
           <li class="my-2">
-            <div class="d-flex justify-content-start align-items-center" style="min-height: 75px;">
+            <div class="d-flex justify-content-start align-items-center footer-col-info">
               <span class="span icon-list text-center align-self-center">
                 <i class="fas fa-map-marker-alt fa-lg "></i> 
               </span>
@@ -213,7 +259,7 @@ innovación para la fabricación y mantención de intercambiadores de calor para
             </div>
           </li>
           <li class="my-2">
-            <div class="d-flex justify-content-start align-items-center">
+            <div class="d-flex justify-content-start align-items-center footer-col-info">
               <span class="span icon-list text-center align-self-center">
               <i class="fas fa-phone fa-lg"></i>
             </span>
@@ -223,7 +269,7 @@ innovación para la fabricación y mantención de intercambiadores de calor para
             </div>
           </li>
           <li class="my-2">
-            <div class="d-flex justify-content-start align-items-center">
+            <div class="d-flex justify-content-start align-items-center footer-col-info">
               <span class="span icon-list text-center">
               <i class="fas fa-envelope fa-lg"></i>
             </span>
