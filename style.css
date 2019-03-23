@@ -10778,6 +10778,12 @@ header.masthead .intro-text .intro-heading {
   min-height: 82px;
 }
 
+@media (max-width: 1199.98px) {
+  .portfolio-item .caption .caption-content.caption-welcome {
+    min-height: 127px;
+  }
+}
+
 .portfolio-item .caption .caption-content.caption-welcome.is-yellow {
   background-color: #FFE000;
   border-top-left-radius: 3rem;

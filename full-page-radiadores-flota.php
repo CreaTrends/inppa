@@ -124,7 +124,60 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
 </section>
 
 
-
+<!-- if downloads -->
+<?php
+              $files = rwmb_meta( 'prefix-attace_files' );
+              if($files){
+              ?>
+<section class="page-section-menu  mb-3 py-3 row-products" id="product-type">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-12">
+        <div class="product-list-container ">
+          <div class="products-list-inner border-left">
+            <h2>Descargas</h2>
+            <?php
+            //Columns must be a factor of 12 (1,2,3,4,6,12)
+            $numOfCols = 4;
+            $rowCount = 0;
+            $bootstrapColWidth = 12 / $numOfCols;
+            ?>
+            <div class="row w-100">
+              <div class="col-md-<?php echo $bootstrapColWidth; ?>">
+                <ul class="list-group">
+                  
+                  
+                  <?php
+                  
+                  foreach ($files as $row){
+                  ?>
+                  
+                  <li class="list-group-item">
+                    <div class="download-item d-flex bg-faded ">
+                      <span class="span icon-list text-center icon">
+                        <i class="fas fa-file"></i>
+                      </span>
+                      <a href="<?php echo $row['url']; ?>" class="align-self-center attached-file-text"><?php echo $row['title']; ?></a>
+                    </div>
+                  </li>
+                  
+                  
+                  <?php
+                  $rowCount++;
+                if($rowCount % $numOfCols == 0) echo '</ul></div><div class="col-md-'.$bootstrapColWidth.'"><ul class="list-group">';
+                }
+                ?>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<?php
+}
+              ?>
+              
 <section class="about px-0">
   <div class="container-fluid justify-content-center p-60">
     <div class="row">

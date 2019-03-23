@@ -22,22 +22,7 @@
             <ul class="list-inline text-right social-buttons">
               <li class="list-inline-item text-center">
                 <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item text-center">
-                <a href="#">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-              <li class="list-inline-item text-center">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item text-center">
-                <a href="#">
-                  <i class="fas fa-map-marker-alt"></i>
+                  <i class="fab fa-linkedin-in"></i>
                 </a>
               </li>
             </ul>

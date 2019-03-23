@@ -29,6 +29,10 @@
               padding: .5rem 2rem;
               width: calc(100% - 7vw);
               min-height: 82px;
+              @include media-breakpoint-down(lg) {
+                
+                min-height: 127px;
+              }
         &.is-yellow{
           background-color: $yellow;
           border-top-left-radius: 3rem;

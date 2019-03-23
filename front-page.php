@@ -19,13 +19,13 @@ get_header(); ?>
             <span class="caption-content caption-welcome is-yellow d-flex justify-content-between">
               <h2 class="caption-title mb-0 align-self-center">Mineria</h2>
               
-              <div class="d-flex justify-content-start align-items-center ml-4 home-banner-iconbox">
+              <div class="d-flex justify-content-start align-items-center ml-4 home-banner-iconbox w-50">
                 <span class="span icon-list text-center icon">
                   <i class="fas fa-phone"></i>
                 </span>
                 <div class="phone-container ml-2">
                   <div class="phones">
-                    <div class="phone-inner d-flex justify-content-between">
+                    <div class="phone-inner d-block d-xl-flex justify-content-between">
                       <div class="phone-city mr-2 ">
                         <span class="phone-number">Antofagasta :</span> 
                       </div>
@@ -55,13 +55,13 @@ get_header(); ?>
           <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/home2.JPG');">
             <span class="caption-content caption-welcome is-darkblue d-flex justify-content-between">
               <h2 class="caption-title mb-0 align-self-center">Radiadores flota </h2>
-              <div class="d-flex justify-content-start align-items-center ml-4 home-banner-iconbox">
+              <div class="d-flex justify-content-start align-items-center ml-4 home-banner-iconbox w-50">
                 <span class="span icon-list text-center icon">
                   <i class="fas fa-phone"></i>
                 </span>
                 <div class="phone-container ml-2">
                   <div class="phones">
-                    <div class="phone-inner d-flex justify-content-between">
+                    <div class="phone-inner d-block d-xl-flex justify-content-between">
                       <div class="phone-city mr-2 align-self-center">
                         <span class="phone-number ">Santiago :</span> 
                       </div>
@@ -81,13 +81,13 @@ get_header(); ?>
           <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/home1.jpg');">
             <span class="caption-content caption-welcome is-orange d-flex justify-content-between">
               <h2 class="caption-title mb-0 align-self-center">Panales</h2>
-              <div class="d-flex justify-content-start align-items-center ml-4 home-banner-iconbox">
+              <div class="d-flex justify-content-start align-items-center ml-4 home-banner-iconbox w-50">
                 <span class="span icon-list text-center icon">
                   <i class="fas fa-phone"></i>
                 </span>
                 <div class="phone-container ml-2">
                   <div class="phones">
-                    <div class="phone-inner d-flex justify-content-between">
+                    <div class="phone-inner d-block d-xl-flex justify-content-between">
                       <div class="phone-city mr-2 align-self-center">
                         <span class="phone-number ">Santiago :</span> 
                       </div>
@@ -107,13 +107,13 @@ get_header(); ?>
           <span class="caption" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/home4.jpg');">
             <span class="caption-content caption-welcome is-blue d-flex justify-content-between">
               <h2 class="caption-title mb-0 align-self-center">Intercambiadores de Calor</h2>
-              <div class="d-flex justify-content-start align-items-center ml-4 home-banner-iconbox">
+              <div class="d-flex justify-content-start align-items-center ml-4 home-banner-iconbox w-50">
                 <span class="span icon-list text-center icon ">
                   <i class="fas fa-phone"></i>
                 </span>
                 <div class="phone-container ml-2">
                   <div class="phones">
-                    <div class="phone-inner d-flex justify-content-between">
+                    <div class="phone-inner d-block d-xl-flex justify-content-between">
                       <div class="phone-city mr-2 ">
                         <span class="phone-number">Antofagasta :</span> 
                       </div>
@@ -122,7 +122,7 @@ get_header(); ?>
                         <span class="d-block phone-number">+56552895663</span>
                       </div>
                     </div>
-                    <div class="phone-inner d-flex justify-content-between">
+                    <div class="phone-inner d-block d-xl-flex justify-content-between">
                       <div class="phone-city mr-2">
                         <span class="phone-number">Santiago :</span> 
                       </div>
