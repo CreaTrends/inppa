@@ -9,15 +9,23 @@
  * @package Arkus
  */
 if ( is_page('panales') ) {
+	
 	$menu = 'menu-panales';
+
 }elseif(is_page('radiadores-para-mineria') || is_page('tecnologia-inppa') || is_page('rse')){
+
 	$menu = 'menu-mineria';
+
 }elseif(is_page('intercambiadores-de-calor')){
+
 	$menu = 'menu-intercambiadores';
+
 }elseif(is_page('radiadores-flota')){
+
 	$menu = 'menu-flota';
 }
 elseif(is_page('contacto')){
+
 	$menu = 'menu-contacto';
 }
 else{

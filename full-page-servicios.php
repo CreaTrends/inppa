@@ -25,7 +25,7 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
     <span class="page-caption" style="background-image: url(<?php echo $featured_img_url;?>)">
       <span class="caption-content caption-welcome is-orange d-flex">
         <?php the_title( '<h2 class="caption-title mb-0 align-self-center">', '</h2>' );?>
-        <div class="d-flex justify-content-start align-items-center ml-4 home-banner-iconbox">
+        <div class="d-none d-sm-flex justify-content-start align-items-center ml-4 home-banner-iconbox">
           <span class="span icon-list text-center icon">
             <i class="fas fa-phone"></i>
           </span>

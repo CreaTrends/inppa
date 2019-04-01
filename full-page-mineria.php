@@ -24,7 +24,7 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
     <span class="page-caption" style="background-image: url(<?php echo $featured_img_url;?>)">
       <span class="caption-content caption-welcome is-yellow d-flex">
         <?php the_title( '<h2 class="caption-title mb-0 align-self-center">', '</h2>' );?>
-        <div class="d-flex justify-content-start align-items-center ml-4 home-banner-iconbox">
+        <div class="d-none d-sm-flex justify-content-start align-items-center ml-4 home-banner-iconbox">
           <span class="span icon-list text-center icon">
             <i class="fas fa-phone"></i>
           </span>
@@ -332,17 +332,17 @@ $termchildren = get_term_children( $value->term_taxonomy_id, $value->taxonomy );
               <div class="card border-0">
                 <div class=" text-center">
                   <figure class="figure">
-                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_finning.png?v=1';?>" class="figure-img img-fluid rounded" style="width: 200px;">
+                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_finning.png?v=1';?>" class="figure-img img-fluid rounded" style="width: 165px;">
                   </figure>
                 </div>
                 <div class=" text-center">
                   <figure class="figure">
-                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_joyglobal.png?v=1';?>" class="figure-img img-fluid rounded" style="max-height: 100px;">
+                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_joyglobal.png?v=1';?>" class="figure-img img-fluid rounded" style="width: 170px;">
                   </figure>
                 </div>
                 <div class=" text-center">
                   <figure class="figure">
-                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_komatsu.png?v=1';?>" class="figure-img img-fluid rounded" style="max-height: 100px;">
+                    <img src="<?php echo get_template_directory_uri().'/assets/images/logo_komatsu.png?v=1';?>" class="figure-img img-fluid rounded" style="width: 165px;">
                   </figure>
                 </div>
               </div>
@@ -444,7 +444,7 @@ innovación para la fabricación y mantención de intercambiadores de calor para
               <span class="span icon-list text-center">
                 <i class="fas fa-map-marker-alt fa-lg self-align-center"></i> 
               </span>
-              <span class="ml-2"><a href="https://www.google.com/maps/place/Chuquicamata,+Codelco+Ne/@-22.3090195,-68.9210203,17z/data=!3m1!4b1!4m5!3m4!1s0x96ac7568707457b9:0x496c5511ebed67ad!8m2!3d-22.3090245!4d-68.9188316" target="_blank">Calle Cía. Radomiro Tomic 375, Barrio Industrial La Negra</a></span>
+              <span class="ml-2"><a href="https://www.google.com/maps/place/La+Negra,+Antofagasta,+Antofagasta+Region/@-23.762502,-70.3333386,15z/data=!4m5!3m4!1s0x96afd0c4037933a3:0x176484ff0c2c0623!8m2!3d-23.7658653!4d-70.3279495" target="_blank">Calle Cía. Radomiro Tomic 375, Barrio Industrial La Negra</a></span>
             </div>
           </li>
           <li class="my-2">
