@@ -444,7 +444,7 @@ innovación para la fabricación y mantención de intercambiadores de calor para
               <span class="span icon-list text-center">
                 <i class="fas fa-map-marker-alt fa-lg self-align-center"></i> 
               </span>
-              <span class="ml-2"><a href="https://www.google.com/maps/place/La+Negra,+Antofagasta,+Antofagasta+Region/@-23.762502,-70.3333386,15z/data=!4m5!3m4!1s0x96afd0c4037933a3:0x176484ff0c2c0623!8m2!3d-23.7658653!4d-70.3279495" target="_blank">Calle Cía. Radomiro Tomic 375, Barrio Industrial La Negra</a></span>
+              <span class="ml-2"><a href="https://www.google.com/maps/place/Metalchile/@-23.7586454,-70.3045271,15.5z/data=!4m5!3m4!1s0x96afd0e54d5efbe5:0xa609009c2f9c910!8m2!3d-23.757706!4d-70.300437?shorturl=1" target="_blank">Calle Cía. Radomiro Tomic 375, Barrio Industrial La Negra</a></span>
             </div>
           </li>
           <li class="my-2">
